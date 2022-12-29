@@ -1,0 +1,126 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({IntroText = "Onyx's Doors Hub v1",Name = "Doors Hub by Onyx", HidePremium = false, SaveConfig = true, ConfigFolder = "DoorsSex"})
+
+--[[
+Name = <string> - The name of the UI.
+HidePremium = <bool> - Whether or not the user details shows Premium status or not.
+SaveConfig = <bool> - Toggles the config saving in the UI.
+ConfigFolder = <string> - The name of the folder where the configs are saved.
+IntroEnabled = <bool> - Whether or not to show the intro animation.
+IntroText = <Onyx's Doors Hub> - Text to show in the intro animation.
+IntroIcon = <string> - URL to the image you want to use in the intro animation.
+Icon = <string> - URL to the image you want displayed on the window.
+CloseCallback = <function> - Function to execute when the window is closed.
+]]
+
+local Tab = Window:MakeTab({
+	Name = "GUIS",
+	Icon = "rbxassetid://10716387808",
+	PremiumOnly = false
+})
+Tab:AddParagraph("NOTE:","This Is All FOr Now...")
+--[[
+Name = <GUIS> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+local Section = Tab:AddSection({
+	Name = "GUIS"
+})
+
+--[[
+Name = <string> - The name of the section.
+]]
+
+Tab:AddButton({
+	Name = "Vynixius",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Doors Entity Replicator",
+	Callback = function()
+        loadstring(game:HttpGet"https://raw.githubusercontent.com/sponguss/Doors-Entity-Replicator/main/source.lua")()
+  	end    
+})
+Tab:AddButton({
+	Name = "Item Hub By Totally Alex (not mine)",
+	Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Onyxgaming69/TOTALLY-ALEX-S-HUB-NOT-MINE/main/TOTALLY%20ALEX'S%20HUB%20NOT%20MINE"))()
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Items",
+	Icon = "rbxassetid://11501594133",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "Torch BY TOTALLY ALEX ",
+	Callback = function()
+        local Item = game:GetObjects("rbxassetid://3499523244")[1]
+        Item.Parent = game.Players.LocalPlayer.Backpack
+  	end    
+})
+Tab:AddButton({
+	Name = "A Phone to call the cops on entitys ",
+	Callback = function()
+        local Item = game:GetObjects("rbxassetid://2820656650")[1]
+        Item.Parent = game.Players.LocalPlayer.Backpack
+  	end    
+})
+Tab:AddButton({
+	Name = "Gun (idk if this works)",
+	Callback = function()
+        local Item = game:GetObjects("rbxassetid://11599469897")[1]
+        Item.Parent = game.Players.LocalPlayer.Backpack
+  	end    
+})
+Tab:AddButton({
+	Name = "Minecraft torch by me",
+	Callback = function()
+        local Item = game:GetObjects("rbxassetid://7694511688")[1]
+        Item.Parent = game.Players.LocalPlayer.Backpack
+  	end    
+})
+local Tab = Window:MakeTab({
+	Name = "Free Admin",
+	Icon = "rbxassetid://4563944921",
+	PremiumOnly = false
+    Tab:AddButton({
+        Name = "Infinite Yield",
+        Callback = function()
+            loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+          end    
+    })
+    Tab:AddButton({
+        Name = "Fates Admin",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+          end    
+    })
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+local Tab = Window:MakeTab({
+	Name = "Credits",
+    Icon = "rbxassetid://10590477428",
+	PremiumOnly = false
+})
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
+]]
+
+Tab:AddParagraph("Vynixius: RegularVynixu","owner of vynixius")
+Tab:AddParagraph("Doors Entity Replicator: sponguss","The owners of Doors hub")
+Tab:AddParagraph("Items: Totally alex","The owner of some of The items")
